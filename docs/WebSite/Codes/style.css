@@ -15,7 +15,7 @@ header {
 }
 
 p {
-    font-size: 18px;
+    font-size: 17px;
     text-align: justify;
 }
 
@@ -57,7 +57,24 @@ nav.menu{
 
 section.index {
     background: #cfd1de;
-    margin: 40px 15%;
-    padding: 20px 60px;
+    margin: 40px 20%;
+    padding: 50px 60px;
     border-radius: 20px;
+}
+
+footer {
+    background: #000116;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #a56d0b;
 }
