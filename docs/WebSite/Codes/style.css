@@ -19,6 +19,9 @@ p {
     text-align: justify;
 }
 
+
+
+/**Configurações do Menu**/
 nav.menu{
     width: 900px;
     height: 100%;
@@ -28,19 +31,32 @@ nav.menu{
     justify-content: space-between;
 }
 
-.menu-brand {
-    font-size: 50px;
-    font-weight: 700;
-    text-decoration: none;
-    color: #d0aa47;
-}
-
 .menu-itens {
     display: flex;
 }
 
+.menu ul {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul ul li {
+    width: 160px;
+    float: none;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
 .menu-itens a {
-    color: #d0aa47;
+    background-color: #000116;
+    color: #ffde00;
     text-decoration: none;
     padding: 15px;
     display: block;
@@ -49,19 +65,22 @@ nav.menu{
 .menu-itens a:hover {
     color: #a56d0b;
 }
+/**Configurações do Menu**/
 
-.menu ul {
-    list-style-type: none;
-    text-transform: uppercase;
-}
 
+
+/**Configurações do index**/
 section.index {
     background: #cfd1de;
     margin: 40px 20%;
     padding: 50px 60px;
     border-radius: 20px;
 }
+/**Configurações do index**/
 
+
+
+/**Configurações do Rodapé**/
 footer {
     background: #000116;
     color: white;
@@ -78,3 +97,4 @@ footer a:hover{
     text-decoration: underline;
     color: #a56d0b;
 }
+/**Configurações do Rodapé**/
