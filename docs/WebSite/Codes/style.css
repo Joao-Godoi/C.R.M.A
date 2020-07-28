@@ -12,6 +12,8 @@ body {
 header {
     background: #000116;
     height: 100px;
+    margin-top: 0px;
+    
 }
 
 p {
@@ -68,24 +70,49 @@ nav.menu{
 /**Configurações do Menu**/
 
 
+.logo img {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/**Configurações do index**/
-section.index {
+
+/**Configurações do corpo principal**/
+section.corpo {
     background: #cfd1de;
     margin: 40px 20%;
     padding: 50px 60px;
     border-radius: 20px;
 }
-/**Configurações do index**/
+
+.corpo a {
+    color: #a56d0b;
+    text-decoration: none;
+
+}
+/**Configurações do corpo principal**/
 
 
+.solucao img {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    padding: 0px;
+    text-align: center;
+    font-size: 13px;
+}
 
 /**Configurações do Rodapé**/
 footer {
     background: #000116;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
 }
 
 footer a {
