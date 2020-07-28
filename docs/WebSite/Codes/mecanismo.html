@@ -21,7 +21,7 @@
                 <li><a href="#">Projeto &#9662;</a>
                     <ul class="menu=projeto">
                         <li><a href="mecanismo.html">Mecanismo</a></li>
-                        <li><a href="circuito.html">Circuito</a></li>
+                        <li><a href="controle-motores.html">Controle dos Motores</a></li>
                         <li><a href="programacao.html">Programação</a></li>
                         <li><a href="estrutura.html">Estrutura</a></li>
                     </ul>
@@ -34,23 +34,51 @@
         <img src="../Imagens/titulo.png" alt="">
     </div>
     <section class="corpo">
+        <div class="titulo">
+            <h1>Mecanismo</h1>
+            <p>Explicação sobre a problemática encontrada pelo grupo e a solução encontrada</p>
+        </div> <br> <br>
         <div class="mecanismo">
             <h1>Problemática</h1>
             <p>Após a pesquisa de campo foi concluído que era necessário a criação de uma cadeira de rodas que fosse capaz de passar por desníveis encontrados no dia a dia do usuário. O desenvolvimento desta cadeira traria enormes benefícios na qualidade de vida dos portadores de deficiências, uma vez que lhes proveria um aumento de independência e autonomia, diminuindo o receio de sair de casa por falta de acessibilidade, o que proporcionaria mais confiança e autoestima.</p> <br> <br>
 
             <h1>Solução</h1>
             <p>Após um estudo profundo e a análise das possíveis alternativas optou-se por adaptar uma cadeira de rodas convencional, modificando apenas as rodas dianteiras e traseiras, de forma que este novo arranjo projetado de maneira triangular possibilite a alternância dessas rodas para vencer os desníveis encontrados durante o trajeto.</p>
-            <p>Tendo em vista modelos de mochilas infantis que possuem um sistema de três rodas para suavizar o impacto durante a subida de um desnível ou escada, partiu-se deste conceito para a elaboração de um mecanismo similar, porém <a href="circuito.html">motorizado</a>  de modo que pudesse ser implementado em uma cadeira de rodas.</p>
-            <figure class="solucao">
+            <p>Tendo em vista modelos de mochilas infantis que possuem um sistema de três rodas para suavizar o impacto durante a subida de um desnível ou escada, partiu-se deste conceito para a elaboração de um mecanismo similar, porém motorizado de modo que pudesse ser implementado em uma cadeira de rodas.</p>
+            <figure>
                 <img src="../Imagens/Solucao.png" alt="Mecanismo">
-                <figcaption>Mecanismo elaborado pelos desenvolvedores como solução</figcaption>
+                <figcaption>Mecanismo elaborado pelos desenvolvedores</figcaption>
             </figure> <br>
-            <p>Seu funcionamento depende, principalmente, de três engrenagens posicionadas atrás de cada roda e uma centralizada e em contato com as outras ao seu redor com a finalidade de fazer com que todas as rodas girem no mesmo sentido. A placa de acrílico tem como função segurar todo o conjunto de peças do mecanismo juntas de modo que seja possível ela girar na ocorrência de um desnível.</p>
+            <p>Seu funcionamento depende, principalmente, de três engrenagens posicionadas atrás de cada roda e uma centralizada e em contato com as outras ao seu redor com a finalidade de fazer com que todas as rodas girem no mesmo sentido. A placa de acrílico tem como função segurar todo o conjunto de peças do mecanismo juntas de modo que seja possível ela girar na ocorrência de um desnível.</p> <br> <br>
+
+            <h1>Os motores</h1>
+            <p>Para a escolha dos motores primeiramente, efetuou-se pesquisas prévias sobre os estudos de movimento com o intuito de saber as necessidades específicas do motor tal como torque e força, após tal pesquisa foi necessário realizar cálculos para determinar o sistema de redução que seria necessário para que o motor atingisse o torque e a velocidade exigida.</p>
+            <p>Após a finalização dos cálculos da caixa de redução era preciso realizar a escolha do motor, para isso foi realizado uma análise dos tipos que poderiam ser utilizados e, dentre eles, o modelo que apresentou as maiores vantagens foi o motor de passo.</p> <br> <br>
+                
+            <h1> <a name="motor-passo">Motores de Passo</a></h1>
+            <p>Foi escolhido motor de passo por ele apresentar diversas vantagens sendo elas: o torque que ele apresenta, grandeza de suma importância para o projeto, bem como o preço acessível. O funcionamento de um motor de passo é de certa forma simples, pois ele funciona da seguinte maneira, ele possui 4 bobinas que podem ser ligadas e desligadas e um rotor no seu centro que realiza os movimentos de acordo com o acionamento das bobinas.</p>
+            <figure> 
+                <img src="../Imagens/Motor_de_Passo_Rotor.jpg" alt="Motor de passo">
+                <figcaption>
+                    Exemplo circuito interno do motor de passo <br>
+                    Retirado de <i>www.feis.unesp.br</i>
+                </figcaption>
+            </figure> <br>
+            <p>O movimento do rotor é gerado através da energização das bobinas, pois quando estão energizadas elas atraem o polo norte do rotor, resultando assim no movimento do mesmo. Pode se energizar mais de uma bobina oa mesmo tempo para que se obtenha certo ângulo de movimento.</p>
+            <figure>
+                <img src="../Imagens/Motor_De_Passo.gif" alt="Gif motor de passo">
+                <figcaption>
+                    Animação do acionamento das bobinas <br>
+                    Retirado de <i>blog.fazedores.com</i>
+                </figcaption>
+            </figure> <br>
+            <p>O outro motivo pelo qual o motor de passo se destaca é o possível uso deste como um sistema de frenagem. As cadeiras motorizadas convencionais utilizam de um sistema de eletroímãs para realizar a frenagem, o grande problema desse sistema é a sua complexidade e alto valor, tornando-o inadequado para este projeto.</p>
+            <p>Já com o motor de passo é possível a realização da frenagem somente com a devida programação pois quando energizado ele mantém o passo escolhido, ou seja, não se move caso seja empurrado ou se receber alguma força. Sendo assim, mesmo com a cadeira parada o motor continuará energizado, mantendo assim o seu passo fixo, possibilitando a frenagem da cadeira.</p> 
         </div>
     </section>
 
     <footer>Desenvolvido por João Godoi</a> <br>
-        <a href="www.linkedin.com/in/joao-godoi" target="_blank">Linkedin |</a>
+        <a href="https://www.linkedin.com/in/joao-godoi/" target="_blank">Linkedin |</a>
         <a href="https://github.com/Joao-Godoi/">GitHub</a>
         </footer>
 </body>

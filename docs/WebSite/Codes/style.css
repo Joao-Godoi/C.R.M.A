@@ -93,8 +93,19 @@ section.corpo {
 }
 /**Configurações do corpo principal**/
 
+.titulo h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0px;
+}
 
-.solucao img {
+.titulo p {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+.corpo img {
     display: block;
     margin-top: 50px;
     margin-left: auto;
@@ -102,9 +113,17 @@ section.corpo {
 }
 
 figcaption {
-    padding: 0px;
+    padding: 10px;
     text-align: center;
     font-size: 13px;
+}
+
+.mecanismo a {
+    color: black;
+}
+
+.controle a#microcontrolador {
+    color: black;
 }
 
 /**Configurações do Rodapé**/
