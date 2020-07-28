@@ -34,12 +34,73 @@
         <img src="../Imagens/titulo.png" alt="">
     </div>
     <section class="corpo">
+        <div class="titulo">
+            <h1>Programação</h1>
+            <p>Explicação sobre a programação do microcontrolador</p>
+        </div> <br> <br>
         <div class="programacao">
+            <h1>Programação do Arduino</h1>
+            <p>Como dito no tópico de <a href="controle-motores.html#microcontrolador">microcontrolador</a> é necessário que haja um script operando em seu processador, é esse script que manda em todos os periféricos, sejam eles de saída ou de entrada. Para escrever um script é necessário a utilização de um software especializado, pois através dele é possível a conversão de linguagem de programação para a linguagem de máquina, o software utilizado nesse projeto foi o “IDE Arduino” disponibilizado pela própria desenvolvedora do Arduino.</p> <br> <br>
+
+            <h1>Lógica de programação</h1>
+            <p>Na hora de criar um script é necessário seguir uma lógica de programação, cada lógica é desenvolvida de acordo com a necessidade do usuário. Neste projeto a lógica seguida foi a seguinte: é feita uma leitura de dois sinais analógicos enviadas para o Arduino através de um Joystick, o sinal do eixo X e o sinal do eixo Y, esses sinais podem variar de 0 a 1023, de acordo o valor recebido o microcontrolador envia um pulso para os drives, dependendo do pulso os drives ativam ou desativam as bobinas do motor, resultando em uma velocidade e direção que os motores operam. Abaixo está uma tabela com os valores dos sinais que definem o sentido e a velocidade de cada motor:</p> <br>
+
+            <div class="tabela-sinais">
+                <table class="tabela">
+                    <tr>
+                        <th>Sinal</th>
+                        <th>Motor Direito</th>
+                        <th>Motor Esquerdo</th>
+                    </tr>
+                    <tr>
+                        <td>X maior que 300 e Y entre 300 e 700</td>
+                        <td>Sentido horário com velocidade igual ao esquerdo</td>
+                        <td>Sentido horário com velocidade igual ao direito</td>
+                    </tr>
+                    <tr>
+                        <td>X menor que 300 e Y entre 300 e 700</td>
+                        <td>Sentido anti-horário com velocidade igual ao esquerdo</td>
+                        <td>Sentido anti-horário com velocidade igual ao direito</td>
+                    </tr>
+                    <tr>
+                        <td>X entre 300 e 700 e Y maior que 700</td>
+                        <td>Sentido anti-horário com velocidade superior ao esquerdo</td>
+                        <td>Sentido horário com velocidade inferior ao direito</td>
+                    </tr>
+                    <tr>
+                        <td>X entre 300 e 700 e Y menor que 300</td>
+                        <td>Sentido horário com velocidade inferior ao esquerdo</td>
+                        <td>Sentido anti-horário com velocidade superior ao direito</td>
+                    </tr>
+                    <tr>
+                        <td>X maior que 700 e Y maior que 700</td>
+                        <td>Sentido horário com velocidade maior que o esquerdo</td>
+                        <td>Sentido horário com velocidade inferior ao direito</td>
+                    </tr>
+                    <tr>
+                        <td>X maior que 700 e Y menor que 300</td>
+                        <td>Sentido horário com velocidade inferior ao esquerdo</td>
+                        <td>Sentido anti-horário com velocidade superior ao direito</td>
+                    </tr>
+                    <tr>
+                        <td>X menor que 300 e Y maior que 700</td>
+                        <td>Sentido anti-horário com velocidade superior ao esquerdo</td>
+                        <td>Sentido anti-horário com velocidade inferior ao direito</td>
+                    </tr>
+                    <tr>
+                        <td>X menor que 300 e Y menor que 300</td>
+                        <td>Sentido anti-horário com velocidade inferior ao esquerdo</td>
+                        <td>Sentido anti-horário com velocidade superior ao direito</td>
+                    </tr>
+                </table>
+            </div> <br>
+
+            <p>Para ver o código completo que foi desenvolvido acesse <a href="#">esse link</a>.</p>
         </div>
     </section>
     <footer>Desenvolvido por João Godoi</a> <br>
         <a href="https://www.linkedin.com/in/joao-godoi/" target="_blank">Linkedin |</a>
-        <a href="https://github.com/Joao-Godoi/">GitHub</a>
+        <a href="https://github.com/Joao-Godoi/" target="_blank">GitHub</a>
     </footer>
 </body>
 </html>
