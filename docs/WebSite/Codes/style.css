@@ -13,7 +13,7 @@ header {
     background: #000116;
     height: 100px;
     margin-top: 0px;
-    
+    width: 100%;
 }
 
 p {
@@ -25,16 +25,21 @@ p {
 
 /**Configurações do Menu**/
 nav.menu{
-    width: 900px;
+    width: 100%;
     height: 100%;
-    margin: 0 auto;
+    margin: 0 auto; 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.logo-menu {
+    margin-left: 183px;
+}
+
 .menu-itens {
     display: flex;
+    margin-right: 230px;
 }
 
 .menu ul {
@@ -126,7 +131,7 @@ figcaption {
     color: black;
 }
 
-.tabela {
+.tabela, .tabela-dimensionamento {
     border: 1px solid #001435;
     border-spacing: 0px;
     margin-left: auto;
@@ -142,7 +147,7 @@ figcaption {
     vertical-align: center;
 }
 
-.tabela th {
+.tabela, .tabela-dimensionamento th {
     font-size: 16px;
     border: 1px solid #001435;
     padding: 12px;
@@ -150,6 +155,17 @@ figcaption {
     text-align: center;
     vertical-align: center;
 }
+
+.tabela-dimensionamento td {
+    font-size: 14px;
+    border: 1px solid #001435;
+    padding: 8px;
+    margin: 0px;
+    text-align: center;
+    vertical-align: center;
+}
+
+
 
 /**Configurações do Rodapé**/
 footer {
@@ -169,3 +185,31 @@ footer a:hover{
     color: #a56d0b;
 }
 /**Configurações do Rodapé**/
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    section.corpo {
+        margin: 0;
+        padding: 0;
+    }
+
+    section.corpo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-menu {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo img, section.corpo {
+            max-width:100%;
+            height:auto;
+    }
+}
