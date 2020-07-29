@@ -75,12 +75,16 @@ nav.menu{
 /**Configurações do Menu**/
 
 
+
+/**Configurações do Logo Inicial**/
 .logo img {
     display: block;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
+/**Configurações do Logo Inicial**/
+
 
 
 /**Configurações do corpo principal**/
@@ -96,7 +100,6 @@ section.corpo {
     text-decoration: none;
 
 }
-/**Configurações do corpo principal**/
 
 .titulo h1 {
     text-align: center;
@@ -115,6 +118,7 @@ section.corpo {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
 }
 
 figcaption {
@@ -122,15 +126,34 @@ figcaption {
     text-align: center;
     font-size: 13px;
 }
+/**Configurações do corpo principal**/
 
+
+
+/**Configurações da página de mecanismo**/
 .mecanismo a {
     color: black;
 }
 
+.fotos-mecanismo img {
+    padding-bottom: 0px;
+    display: inline-block;
+    margin: 0px 35px;
+    border-radius: 20px;
+}
+/**Configurações da página de mecanismo**/
+
+
+
+/**Configurações da página de controle de motores**/
 .controle a#microcontrolador {
     color: black;
 }
+/**Configurações da página de controle de motores**/
 
+
+
+/**Configurações das tabelas**/
 .tabela, .tabela-dimensionamento {
     border: 1px solid #001435;
     border-spacing: 0px;
@@ -164,6 +187,19 @@ figcaption {
     text-align: center;
     vertical-align: center;
 }
+/**Configurações das tabelas**/
+
+
+
+/**Configurações da página sobre nós**/
+.desenvolvedores {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}
+/**Configurações da página sobre nós**/
 
 
 
@@ -186,9 +222,15 @@ footer a:hover{
 }
 /**Configurações do Rodapé**/
 
+
+
 @media screen and (max-width: 600px) {
     body {
         font-size: 15px;
+    }
+
+    p {
+        font-size: 10px;
     }
 }
 
