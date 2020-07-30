@@ -93,6 +93,7 @@ section.corpo {
     background: #cfd1de;
     width: 55%;
     margin: auto;
+    margin-bottom: 40px;
     padding: 50px 60px;
     border-radius: 20px;
 }
@@ -258,4 +259,5 @@ footer a:hover{
             max-width:100%;
             height:auto;
     }
+
 }
