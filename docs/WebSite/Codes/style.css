@@ -25,7 +25,8 @@ p {
 
 /**Configurações do Menu**/
 nav.menu{
-    width: 100%;
+    width: 90%;
+    max-width: 1100px;
     height: 100%;
     margin: 0 auto; 
     display: flex;
@@ -34,12 +35,12 @@ nav.menu{
 }
 
 .logo-menu {
-    margin-left: 183px;
+    margin-left: 100px;
 }
 
 .menu-itens {
     display: flex;
-    margin-right: 230px;
+    margin-right: 150px;
 }
 
 .menu ul {
@@ -90,7 +91,8 @@ nav.menu{
 /**Configurações do corpo principal**/
 section.corpo {
     background: #cfd1de;
-    margin: 40px 20%;
+    width: 55%;
+    margin: auto;
     padding: 50px 60px;
     border-radius: 20px;
 }
@@ -135,11 +137,17 @@ figcaption {
     color: black;
 }
 
-.fotos-mecanismo img {
-    padding-bottom: 0px;
-    display: inline-block;
-    margin: 0px 35px;
+.fotos-mecanismo {
+    display: flex;
+    justify-content: center;
     border-radius: 20px;
+}
+
+.fotos-mecanismo figcaption {
+    position: absolute;
+    margin-top: 240px;
+    text-align: center;
+    font-size: 13px;
 }
 /**Configurações da página de mecanismo**/
 
@@ -223,26 +231,22 @@ footer a:hover{
 /**Configurações do Rodapé**/
 
 
-
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 15px;
+/**Seção de responsividade**/
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 20px;
     }
 
     p {
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    section.corpo {
-        margin: 0;
-        padding: 0;
+        font-size: 12px;
     }
 
-    section.corpo {
-        display: flex;
-        flex-direction: column;
+    nav.menu {
+        font-size: 13px;
+    }
+
+    .menu-itens {
+        margin: 0px;
     }
 
     .logo-menu {
